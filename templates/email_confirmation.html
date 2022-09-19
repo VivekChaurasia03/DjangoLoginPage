@@ -1,0 +1,9 @@
+{% autoescape off %}
+Welcome to Project_1 Login 
+
+Hello {{ name }}
+
+Please conf your email by clicking on the following link.
+
+confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
